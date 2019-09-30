@@ -1,0 +1,26 @@
+.header {
+    min-height: 100vh;
+    background-image: url('../img/land-img1.jpg');
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 4rem;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-50%, -50%);
+        text-align: left;
+    }
+
+
+}

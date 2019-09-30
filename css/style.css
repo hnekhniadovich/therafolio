@@ -1,3 +1,91 @@
-.test {
-  background-color: green;
-  color: blue; }
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  height: 100%; }
+
+body {
+  box-sizing: border-box;
+  height: 100%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.8em;
+  color: #555555;
+  box-sizing: border-box; }
+
+.heading-primary {
+  color: #82716e;
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+  line-height: 9rem;
+  font-size: 9rem; }
+  .heading-primary--one, .heading-primary--two, .heading-primary--three {
+    display: block; }
+
+.footer {
+  height: 30rem;
+  background-color: #3d3d3f; }
+
+.header {
+  min-height: 100vh;
+  background-image: url("../img/land-img1.jpg");
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  .header__logo-box {
+    position: absolute;
+    top: 40px;
+    left: 4rem; }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: left; }
+
+.landing-img1, .landing-img2, .landing-img3 {
+  position: relative;
+  opacity: 0.5;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.landing-img1 {
+  background-image: url("../img/img1-therapy_1920.jpg");
+  min-height: 40rem; }
+
+.landing-img2 {
+  background-image: url("../img/img2-soap_1920.jpg");
+  min-height: 40rem; }
+
+.landing-img3 {
+  background-image: url("../img/img3-nature_1920.jpg");
+  min-height: 40rem; }
+
+.section-about {
+  height: 30rem; }
+
+.section-services {
+  height: 30rem; }
+
+.section-reviews {
+  height: 30rem; }
+
+.section-contact {
+  height: 30rem; }
+
+@media (max-width: 568px) {
+  .landing-img1, .landing-img2, .landing-img3, .landing-img4 {
+    background-attachment: scroll; } }

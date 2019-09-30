@@ -1,0 +1,45 @@
+.landing-img1, .landing-img2, .landing-img3 {
+    position: relative;
+    opacity: 0.5;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.landing-img1 {
+    background-image: url('../img/img1-therapy_1920.jpg');
+    min-height: 40rem;
+}
+
+.landing-img2 {
+    background-image: url('../img/img2-soap_1920.jpg');
+    min-height: 40rem;
+}
+
+.landing-img3 {
+    background-image: url('../img/img3-nature_1920.jpg');
+    min-height: 40rem;
+}
+
+.section-about {
+    height: 30rem;
+}
+
+.section-services {
+    height: 30rem;
+}
+
+.section-reviews {
+    height: 30rem;
+}
+
+.section-contact {
+    height: 30rem;
+}
+
+@media(max-width: 568px){
+    .landing-img1, .landing-img2, .landing-img3, .landing-img4 {
+        background-attachment: scroll;
+    }
+}
