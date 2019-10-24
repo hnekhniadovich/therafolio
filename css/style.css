@@ -13,79 +13,22 @@ body {
   box-sizing: border-box;
   height: 100%; }
 
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 1.8em;
-  color: #555555;
-  box-sizing: border-box; }
+#slider .item > div {
+  display: block;
+  width: 100%;
+  height: auto; }
 
-.heading-primary {
-  color: #82716e;
-  text-transform: uppercase;
-  margin-bottom: 6rem;
-  line-height: 9rem;
-  font-size: 9rem; }
-  .heading-primary--one, .heading-primary--two, .heading-primary--three {
-    display: block; }
-
-.footer {
-  height: 30rem;
-  background-color: #3d3d3f; }
-
-.header {
-  min-height: 100vh;
-  background-image: url("../img/land-img1.jpg");
-  position: relative;
-  opacity: 0.70;
-  background-position: center;
+.item .slide {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-  .header__logo-box {
-    position: absolute;
-    top: 40px;
-    left: 4rem; }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 35%;
-    transform: translate(-50%, -50%);
-    text-align: left; }
-
-.landing-img1, .landing-img2, .landing-img3 {
+  background-position: top;
   position: relative;
-  opacity: 0.5;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
-.landing-img1 {
-  background-image: url("../img/img1-therapy_1920.jpg");
-  min-height: 40rem; }
-
-.landing-img2 {
-  background-image: url("../img/img2-soap_1920.jpg");
-  min-height: 40rem; }
-
-.landing-img3 {
-  background-image: url("../img/img3-nature_1920.jpg");
-  min-height: 40rem; }
-
-.section-about {
-  height: 30rem; }
-
-.section-services {
-  height: 30rem; }
-
-.section-reviews {
-  height: 30rem; }
-
-.section-contact {
-  height: 30rem; }
-
-@media (max-width: 568px) {
-  .landing-img1, .landing-img2, .landing-img3, .landing-img4 {
-    background-attachment: scroll; } }
+  width: 100%;
+  height: 100vh; }
+  .item .slide--1 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide1.jpg); }
+  .item .slide--2 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide2.jpg); }
+  .item .slide--3 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide3.jpg); }
+  .item .slide--4 {
+    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide4.jpg); }
