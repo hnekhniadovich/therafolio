@@ -13,22 +13,46 @@ body {
   box-sizing: border-box;
   height: 100%; }
 
-#slider .item > div {
+.header__slider {
+  position: relative;
   display: block;
-  width: 100%;
-  height: auto; }
+  -ms-touch-action: pan-y;
+  touch-action: pan-y; }
+  .header__slider .slick-arrow {
+    position: absolute;
+    z-index: 20;
+    top: 50%;
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    background-color: #fff; }
+    .header__slider .slick-arrow.slick-prev {
+      left: 3rem;
+      background-image: url(../img/SVG/chevron-thin-left.svg) no-repeat;
+      z-index: 100; }
+    .header__slider .slick-arrow.slick-next {
+      right: 3rem;
+      background-image: url(../img/sprite.svg#icon-chevron-thin-right); }
 
-.item .slide {
+.header .slide {
   background-size: cover;
   background-position: top;
   position: relative;
   width: 100%;
   height: 100vh; }
-  .item .slide--1 {
+  .header .slide--1 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide1.jpg); }
-  .item .slide--2 {
+  .header .slide--2 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide2.jpg); }
-  .item .slide--3 {
+  .header .slide--3 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide3.jpg); }
-  .item .slide--4 {
+  .header .slide--4 {
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide4.jpg); }
+
+.header__text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 10; }
