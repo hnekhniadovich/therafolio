@@ -8,6 +8,17 @@ $(document).ready(function(){
         fade: true,
         cssEase: 'linear'
     });
+
+    var leftNavHtml = '<svg class="slick-prev__icon"> \
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-left"></use> \
+                    </svg>';
+
+    var rightNavHtml = '<svg class="slick-next__icon"> \
+                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use> \
+                    </svg>';
+
+    $('.slick-prev').append(leftNavHtml);
+    $('.slick-next').append(rightNavHtml);
 });
 
 

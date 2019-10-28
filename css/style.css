@@ -22,17 +22,38 @@ body {
     position: absolute;
     z-index: 20;
     top: 50%;
-    width: 5rem;
-    height: 5rem;
+    width: 4.6rem;
+    height: 4.6rem;
     overflow: hidden;
-    background-color: #fff; }
+    background-color: #fff;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    transition: 0.2s; }
+    .header__slider .slick-arrow:hover {
+      background-color: #000; }
     .header__slider .slick-arrow.slick-prev {
       left: 3rem;
-      background-image: url(../img/SVG/chevron-thin-left.svg) no-repeat;
-      z-index: 100; }
+      z-index: 100;
+      font-size: 0;
+      transition: 0.2s; }
+      .header__slider .slick-arrow.slick-prev .slick-prev__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: #000; }
+      .header__slider .slick-arrow.slick-prev:hover .slick-prev__icon {
+        fill: #fff; }
     .header__slider .slick-arrow.slick-next {
       right: 3rem;
-      background-image: url(../img/sprite.svg#icon-chevron-thin-right); }
+      z-index: 100;
+      font-size: 0;
+      transition: 0.2s; }
+      .header__slider .slick-arrow.slick-next .slick-next__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: #000; }
+      .header__slider .slick-arrow.slick-next:hover .slick-next__icon {
+        fill: #fff; }
 
 .header .slide {
   background-size: cover;
@@ -41,13 +62,13 @@ body {
   width: 100%;
   height: 100vh; }
   .header .slide--1 {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide1.jpg); }
+    background-image: url(../img/slide1.jpg); }
   .header .slide--2 {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide2.jpg); }
+    background-image: url(../img/slide2.jpg); }
   .header .slide--3 {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide3.jpg); }
+    background-image: url(../img/slide3.jpg); }
   .header .slide--4 {
-    background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/slide4.jpg); }
+    background-image: url(../img/slide4.jpg); }
 
 .header__text-box {
   position: absolute;
