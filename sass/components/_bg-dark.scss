@@ -1,0 +1,17 @@
+.dark-bg {
+    background-color: var(--color-primary);
+    text-align: center;
+
+    &--content {
+        padding: 15rem 40rem;
+    }
+
+    .h4 {
+        padding: 3rem 10rem 0;
+    }
+
+    .h6 {
+        padding: 2rem 10rem 0;
+        color: var(--color-white);
+    }
+}

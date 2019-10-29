@@ -68,7 +68,7 @@ body {
   color: var(--color-white);
   font-size: 6.2rem;
   font-weight: 200;
-  line-height: 1.1em;
+  line-height: 1.2;
   text-shadow: -1px 0px 0px white; }
   .h1--left {
     display: block;
@@ -77,12 +77,30 @@ body {
     display: block;
     animation: moveInRight 1s ease-out; }
 
+.h2 {
+  color: var(--color-white);
+  font-size: 5.6rem;
+  font-weight: 200;
+  line-height: 1.1; }
+
+.h3 {
+  color: var(--color-white);
+  font-size: 4.6rem;
+  font-weight: 200;
+  line-height: 1.2; }
+
+.h4 {
+  color: var(--color-white);
+  font-size: 2.4rem;
+  font-weight: 200;
+  line-height: 1.5; }
+
 .h6 {
   font-family: "Raleway", sans-serif;
   font-weight: 600;
   color: var(--color-white);
-  font-size: 1rem;
-  line-height: 2.6em;
+  font-size: 1.2rem;
+  line-height: 2.6;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 2.5rem; }
@@ -184,3 +202,14 @@ body {
 .btn--animated {
   animation: moveInBottom 1s ease-out .75s;
   animation-fill-mode: backwards; }
+
+.dark-bg {
+  background-color: var(--color-primary);
+  text-align: center; }
+  .dark-bg--content {
+    padding: 15rem 40rem; }
+  .dark-bg .h4 {
+    padding: 3rem 10rem 0; }
+  .dark-bg .h6 {
+    padding: 2rem 10rem 0;
+    color: var(--color-white); }
