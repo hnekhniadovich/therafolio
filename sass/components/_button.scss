@@ -4,13 +4,15 @@
     &:visited {
         text-transform: uppercase;
         text-decoration: none;
-        padding: 1rem 2rem;
+        text-align: center;
+        padding: 1rem 2rem 0.9rem;
         display: inline-block;
         border-radius: 2px;
-        transition: all .3s;
+        transition: all .4s ease-in-out;
         position: relative;
         font-size: 1.2rem;
         border: 1px solid #fff;
+        white-space: nowrap;
     
         // change for the <button> element
         border: none;
@@ -18,7 +20,7 @@
         }
 
     &--white {
-        margin-top: 2.5rem;
+        margin-top: 3rem;
         font-family: "Raleway", sans-serif;
         background-color: var(--color-white);
         color: var(--color-black);
@@ -29,6 +31,11 @@
             background-color: var(--color-black);
             color: var(--color-white);
         }
+    }
+
+    &--animated {
+        animation: moveInBottom 1s ease-out .75s;
+        animation-fill-mode: backwards;
     }
 }
 

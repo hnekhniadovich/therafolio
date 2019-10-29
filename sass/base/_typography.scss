@@ -6,20 +6,38 @@ body {
     box-sizing: border-box;
 }
 
-h1 {
+.h1 {
     color: var(--color-white);
-    font-size: 6.4rem;
+    font-size: 6.2rem;
     font-weight: 200;
     line-height: 1.1em;
     text-shadow: -1px 0px 0px rgba(255, 255, 255, 1);
+
+    &--left {
+        display: block;
+        animation: moveInLeft 1s ease-out;
+    }
+
+    &--right {
+        display: block;
+        animation: moveInRight 1s ease-out;
+    }
+
+
 }
 
-h6 {
-    font-family: "Roboto", sans-serif;
+.h6 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
     color: var(--color-white);
     font-size: 1rem;
     line-height: 2.6em;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 2.5rem;
+
+    &--animated {
+        animation: moveInTop 1s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
 }

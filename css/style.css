@@ -6,6 +6,42 @@
   --color-black: #000;
   --color-grey: #666; }
 
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem); }
+  80% {
+    transform: translateX(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 *,
 *::after,
 *::before {
@@ -28,21 +64,31 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
-h1 {
+.h1 {
   color: var(--color-white);
-  font-size: 6.4rem;
+  font-size: 6.2rem;
   font-weight: 200;
   line-height: 1.1em;
   text-shadow: -1px 0px 0px white; }
+  .h1--left {
+    display: block;
+    animation: moveInLeft 1s ease-out; }
+  .h1--right {
+    display: block;
+    animation: moveInRight 1s ease-out; }
 
-h6 {
-  font-family: "Roboto", sans-serif;
+.h6 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
   color: var(--color-white);
   font-size: 1rem;
   line-height: 2.6em;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 2.5rem; }
+  .h6--animated {
+    animation: moveInTop 1s ease-out .75s;
+    animation-fill-mode: backwards; }
 
 .header__slider {
   position: relative;
@@ -112,18 +158,20 @@ h6 {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1rem 2rem;
+  text-align: center;
+  padding: 1rem 2rem 0.9rem;
   display: inline-block;
   border-radius: 2px;
-  transition: all .3s;
+  transition: all .4s ease-in-out;
   position: relative;
   font-size: 1.2rem;
   border: 1px solid #fff;
+  white-space: nowrap;
   border: none;
   cursor: pointer; }
 
 .btn--white {
-  margin-top: 2.5rem;
+  margin-top: 3rem;
   font-family: "Raleway", sans-serif;
   background-color: var(--color-white);
   color: var(--color-black);
@@ -132,3 +180,7 @@ h6 {
   .btn--white:hover {
     background-color: var(--color-black);
     color: var(--color-white); }
+
+.btn--animated {
+  animation: moveInBottom 1s ease-out .75s;
+  animation-fill-mode: backwards; }
