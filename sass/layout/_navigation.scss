@@ -1,26 +1,86 @@
 .navigation {
+    position: absolute;
+    left: 0;
+    right: 0;
     z-index: 10;
     max-width: 150rem;
-    margin: 2rem auto;
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    text-align: center;
+    margin: 0.8rem auto;
 
     &__nav {
-        position: relative;
-        left: -50%;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         padding: 0 4rem;
+
+        @include respond($bp-medium) {   
+            padding: 0 3rem;
+        }
+    }
+
+    &__logo {
+        &:link, 
+        &:visited {
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: 2.8rem;
+            cursor: pointer;
+            font-weight: 300;
+            letter-spacing: 0.8px;
+        }
     }
 
     &__list {
         display: flex;
+        list-style: none;
+        justify-content: space-between;
+        width: 28%; 
+
+        @include respond($bp-large) {   
+            width: 35%; 
+        }
+
+        @include respond($bp-medium) {   
+            width: 57%; 
+        }
+
+        @include respond($bp-small) {   
+            display: none;
+        }
     }
 
-    &__item {
+    &__item--tablet-view {
+        display: none;
 
+        @include respond($bp-medium) {   
+            display: unset;
+        }
+    }
+
+    &__link {
+        &:link, 
+        &:visited {
+            text-decoration: none;
+            font-family: "Raleway", sans-serif;
+            font-weight: 500;
+            color: var(--color-white);
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 2.1px;
+            cursor: pointer;
+            border-bottom: 1px solid transparent;
+            transition: border-bottom 0.4s;
+            padding-bottom: 0.1rem;
+        }
+
+        &:hover,
+        &:active {
+            border-bottom: 1px solid var(--color-white);
+        }
+    }
+
+    &__btn {
+        @include respond($bp-medium) {  
+            display: none;
+        }
     }
 }

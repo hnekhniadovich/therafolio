@@ -50,12 +50,16 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%;
-  height: 100%; }
+  font-size: 62.5%; }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 50em) {
+    html {
+      font-size: 50%; } }
 
 body {
-  box-sizing: border-box;
-  height: 100%; }
+  box-sizing: border-box; }
 
 body {
   font-family: "Work Sans", sans-serif;
@@ -174,22 +178,63 @@ body {
   z-index: 10; }
 
 .navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
   z-index: 10;
   max-width: 150rem;
-  margin: 2rem auto;
-  position: absolute;
-  left: 50%;
-  width: 100%;
-  text-align: center; }
+  margin: 0.8rem auto; }
   .navigation__nav {
-    position: relative;
-    left: -50%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: baseline;
     padding: 0 4rem; }
+    @media only screen and (max-width: 50em) {
+      .navigation__nav {
+        padding: 0 3rem; } }
+  .navigation__logo:link, .navigation__logo:visited {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 2.8rem;
+    cursor: pointer;
+    font-weight: 300;
+    letter-spacing: 0.8px; }
   .navigation__list {
-    display: flex; }
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 28%; }
+    @media only screen and (max-width: 68.75em) {
+      .navigation__list {
+        width: 35%; } }
+    @media only screen and (max-width: 50em) {
+      .navigation__list {
+        width: 57%; } }
+    @media only screen and (max-width: 37.5em) {
+      .navigation__list {
+        display: none; } }
+  .navigation__item--tablet-view {
+    display: none; }
+    @media only screen and (max-width: 50em) {
+      .navigation__item--tablet-view {
+        display: unset; } }
+  .navigation__link:link, .navigation__link:visited {
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    color: var(--color-white);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.4s;
+    padding-bottom: 0.1rem; }
+  .navigation__link:hover, .navigation__link:active {
+    border-bottom: 1px solid var(--color-white); }
+  @media only screen and (max-width: 50em) {
+    .navigation__btn {
+      display: none; } }
 
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -200,13 +245,13 @@ body {
   border-radius: 2px;
   transition: all .4s ease-in-out;
   position: relative;
-  font-size: 1.2rem;
   border: 1px solid #fff;
   white-space: nowrap;
   border: none;
   cursor: pointer; }
 
 .btn--white {
+  font-size: 1.2rem;
   margin-top: 3rem;
   font-family: "Raleway", sans-serif;
   background-color: var(--color-white);
@@ -216,6 +261,17 @@ body {
   .btn--white:hover {
     background-color: var(--color-black);
     color: var(--color-white); }
+
+.btn--black {
+  font-size: 1.1rem;
+  margin-top: 3rem;
+  font-family: "Raleway", sans-serif;
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-weight: 600;
+  letter-spacing: 2.5px; }
+  .btn--black:hover {
+    background-color: #333333; }
 
 .btn--animated {
   animation: moveInBottom 1s ease-out .75s;
