@@ -173,6 +173,24 @@ body {
   text-align: center;
   z-index: 10; }
 
+.navigation {
+  z-index: 10;
+  max-width: 150rem;
+  margin: 2rem auto;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  text-align: center; }
+  .navigation__nav {
+    position: relative;
+    left: -50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem; }
+  .navigation__list {
+    display: flex; }
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
