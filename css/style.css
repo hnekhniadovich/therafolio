@@ -213,3 +213,23 @@ body {
   .dark-bg .h6 {
     padding: 2rem 10rem 0;
     color: var(--color-white); }
+
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15rem 20rem; }
+  .about__content--img {
+    margin-right: 12rem; }
+  .about__content--text {
+    margin-right: 10rem;
+    text-align: center; }
+    .about__content--text .h4 {
+      color: var(--color-black);
+      font-weight: 300;
+      margin-bottom: 2rem; }
+    .about__content--text p {
+      font-size: 1.6rem;
+      font-weight: 300;
+      text-align: justify;
+      text-indent: 4rem; }

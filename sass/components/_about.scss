@@ -1,0 +1,31 @@
+.about {
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 15rem 20rem;
+
+        &--img {
+            margin-right: 12rem;
+        }
+
+        &--text {
+            margin-right: 10rem;
+            text-align: center;
+
+            .h4 {
+                color: var(--color-black);
+                font-weight: 300;
+                margin-bottom: 2rem;
+            }
+
+            p {
+                font-size: 1.6rem;
+                font-weight: 300;
+                text-align: justify;
+                text-indent: 4rem; 
+            }
+        }
+    }
+}
