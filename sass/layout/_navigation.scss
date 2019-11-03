@@ -4,17 +4,20 @@
     right: 0;
     z-index: 10;
     max-width: 150rem;
-    margin: 0.8rem auto;
+    margin: auto;
+    height: 1rem;
+    margin-top: 1rem;
+
+    @include respond($bp-small) {   
+        position: relative;
+        height: 5rem;
+    }
 
     &__nav {
         display: flex;
         justify-content: space-between;
         align-items: baseline;
         padding: 0 4rem;
-
-        @include respond($bp-medium) {   
-            padding: 0 3rem;
-        }
     }
 
     &__logo {
@@ -22,29 +25,34 @@
         &:visited {
             text-decoration: none;
             color: var(--color-white);
-            font-size: 2.8rem;
+            font-size: 2.6rem;
             cursor: pointer;
             font-weight: 300;
+            text-shadow: -0.8px 0px 0px rgba(255, 255, 255, 1);
             letter-spacing: 0.8px;
+
+            @include respond($bp-small) {   
+                color: var(--color-black);
+                font-weight: 400;
+            }
         }
     }
 
     &__list {
         display: flex;
         list-style: none;
-        justify-content: space-between;
-        width: 28%; 
-
-        @include respond($bp-large) {   
-            width: 35%; 
-        }
-
-        @include respond($bp-medium) {   
-            width: 57%; 
-        }
+        justify-content: center;
 
         @include respond($bp-small) {   
             display: none;
+        }
+    }
+
+    &__item {
+        margin: 0 1.2rem;
+
+        @include respond($bp-medium) {   
+            margin: 0 1rem;
         }
     }
 
@@ -61,7 +69,7 @@
         &:visited {
             text-decoration: none;
             font-family: "Raleway", sans-serif;
-            font-weight: 500;
+            font-weight: 600;
             color: var(--color-white);
             font-size: 1.3rem;
             text-transform: uppercase;
@@ -78,9 +86,39 @@
         }
     }
 
-    &__btn {
+    &__ctrl {
+
         @include respond($bp-medium) {  
             display: none;
+        }
+
+        &--icon {
+            margin-bottom: -1rem;
+            margin-right: .9rem;
+            height: 3rem;
+            width: 3rem;
+            fill: var(--color-grey-light); 
+            
+            &:hover {
+                fill: var(--color-tertiary);
+            }
+        }
+    }
+
+    &__icons {
+
+        display: none;
+
+        @include respond($bp-small) {   
+            display: unset;
+        }
+
+        &--mail, &--phone, &--dehaze  {
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1.5rem;
+            stroke: var(--color-white);
+            stroke-width: .7;
         }
     }
 }
