@@ -15,11 +15,9 @@
         <title>MD | Massage Therapist</title>
     </head>
     <body>
-
         <header class="header">
-
-            <div class="navigation">
-                <nav class="navigation__nav">
+            <nav class="topbar navigation">
+                <div class="navigation__nav">
                     <a class="navigation__logo" href="#">MD Massage</a>
                     <ul class="navigation__list">
                         <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
@@ -29,10 +27,10 @@
                         <li class="navigation__item navigation__item--tablet-view"><a href="#" class="navigation__link">Contact</a></li>
                     </ul>
                     <div class="navigation__ctrl">
-                        <svg class="navigation__ctrl--icon">
+                        <svg class="navigation__ctrl--icon" id="sidebarCollapse">
                             <use xlink:href="img/sprite.svg#icon-more-vertical"></use>
                         </svg>
-                        <a href="#" class="btn btn--black ">Contact</a>
+                        <a href="#" class="btn btn--black">Contact</a>
                     </div>
                     <div class="navigation__icons">
                         <svg class="navigation__icons--mail">
@@ -45,8 +43,45 @@
                             <use xlink:href="img/sprite.svg#icon-dehaze"></use>
                         </svg>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
+
+            <nav id="sidebar">
+                <div class="sidebar__icon">
+                    <svg class="sidebar__icon--x">
+                        <use xlink:href="img/sprite.svg#icon-x"></use>
+                    </svg>
+                </div>
+                <div class="content">
+                    <h3 class="h3">Contact</h3>
+                    <p class="h4">Ask me any questions you have through the following channels.</p>
+                    <div class="u-margin-bottom-small">&nbsp</div>
+                    <h6 class="h6">Email</h6>
+                    <a href="" class="h4">dzmarusek@gmail.com</a>
+                    <h6 class="h6">Phone &amp; Whatsapp</h6>
+                    <a href="" class="h4">(401) 450-8770</a>
+                    <h6 class="h6">Schedule</h6>
+                    <h5 class="h5">Monday to Friday</h5>
+                    <h5 class="h5">Afternoon 4pm to 8:30pm</h5>
+
+                </div>
+                <ul class="social-links">
+                    <svg class="social-links__icons--facebook">
+                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                    </svg>
+                    <svg class="social-links__icons--instagram">
+                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="social-links__icons--google-plus1">
+                        <use xlink:href="img/sprite.svg#icon-google-plus1"></use>
+                    </svg>
+                    <svg class="social-links__icons--mail">
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
+                    </svg>
+                </ul>
+            </nav>
+
+            <div class="sidebar-overlay">&nbsp</div>
 
             <div class="header__text-box">
                 <h6 class="h6 h6--animated">Massage Therapist in New York</h6>

@@ -19,6 +19,19 @@ $(document).ready(function(){
 
     $('.slick-prev').append(leftNavHtml);
     $('.slick-next').append(rightNavHtml);
+
+    $(".sidebar__icon--x, .sidebar-overlay").on("click", function() {
+        $("#sidebar").removeClass("active");
+        $(".sidebar-overlay").fadeOut()
+    });
+    $("#sidebarCollapse").on("click", function() {
+        $("#sidebar").addClass("active");
+        $(".sidebar-overlay").fadeIn()
+    });
 });
+
+
+
+
 
 
