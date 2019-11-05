@@ -1,17 +1,26 @@
 .dark-bg {
     background-color: var(--color-primary);
     text-align: center;
+    padding: 15rem auto;
+
 
     &--content {
-        padding: 15rem 40rem;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10rem 0;
+        
+        max-width: 50vw;
+
+
+        @include respond($bp-medium) {   
+            max-width: 70vw;
+        }
+
+
+        @include respond($bp-small) {   
+            max-width: 80vw;
+        }
+        
     }
 
-    .h4 {
-        padding: 3rem 10rem 0;
-    }
-
-    .h6 {
-        padding: 2rem 10rem 0;
-        color: var(--color-white);
-    }
 }

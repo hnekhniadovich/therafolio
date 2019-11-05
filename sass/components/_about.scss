@@ -1,29 +1,77 @@
 .about {
+    padding: 12rem 10rem 18rem 10rem;
+
+    @include respond($bp-medium) {   
+        padding: 10rem 4rem 14rem 4rem;
+    }
+
+
+    @include respond($bp-small) {   
+        padding: 10rem 2rem;
+    }
 
     &__content {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 15rem 20rem;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+        
+        max-width: 100rem;
+
+        @include respond($bp-medium) {   
+            max-width: 70rem;
+        }
+
+
+        @include respond($bp-small) {   
+            flex-direction: column;
+        }
+
 
         &--img {
-            margin-right: 12rem;
+
+            width: 50vw;
+            height: auto;
+
+            @include respond($bp-medium) {   
+                width: 37vw;
+            }
+    
+    
+            @include respond($bp-small) {   
+                margin-bottom: 8rem;
+                width: 80vw;
+            }
         }
 
         &--text {
-            margin-right: 10rem;
-            text-align: center;
+            margin-left: 8vw;
+
+            @include respond($bp-medium) {   
+                margin-left: 7vw;
+            }
+
+            @include respond($bp-small) {   
+                margin: 0 5rem;
+            }
 
             .h4 {
                 color: var(--color-black);
                 font-weight: 300;
                 margin-bottom: 2rem;
+                text-align: center;
+
+                
+                
             }
 
             p {
                 font-size: 1.6rem;
                 font-weight: 300;
-                text-align: justify;
+                //text-align: justify;
                 text-indent: 4rem; 
             }
         }
