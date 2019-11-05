@@ -5,7 +5,6 @@
         padding: 10rem 4rem 14rem 4rem;
     }
 
-
     @include respond($bp-small) {   
         padding: 10rem 2rem;
     }
@@ -17,19 +16,15 @@
         margin-left: auto;
         margin-right: auto;
         
-
-        
         max-width: 100rem;
 
         @include respond($bp-medium) {   
             max-width: 70rem;
         }
 
-
         @include respond($bp-small) {   
             flex-direction: column;
         }
-
 
         &--img {
 
@@ -39,7 +34,6 @@
             @include respond($bp-medium) {   
                 width: 37vw;
             }
-    
     
             @include respond($bp-small) {   
                 margin-bottom: 8rem;
@@ -62,16 +56,12 @@
                 color: var(--color-black);
                 font-weight: 300;
                 margin-bottom: 2rem;
-                text-align: center;
-
-                
-                
+                text-align: center;    
             }
 
             p {
                 font-size: 1.6rem;
                 font-weight: 300;
-                //text-align: justify;
                 text-indent: 4rem; 
             }
         }
