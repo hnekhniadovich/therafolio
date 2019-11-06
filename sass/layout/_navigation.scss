@@ -3,17 +3,16 @@
     left: 0;
     right: 0;
     z-index: 10;
-    max-width: 150rem;
-    margin: auto;
+    margin: 0 auto;
     height: 1rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
 
     @include respond($bp-small) {   
         position: relative;
         background-color: var(--color-white);
         color: var(--color-primary);
-        margin-top: 0;
         height: 4.8rem;
+        padding-top: 0;
     }
 
     &__nav {
@@ -21,6 +20,9 @@
         justify-content: space-between;
         align-items: baseline;
         padding: 0 4rem;
+        max-width: 150rem;
+        margin-left: auto;
+        margin-right: auto;
 
         @include respond($bp-small) {  
             flex-direction: column; 
@@ -125,6 +127,7 @@
 
             @include respond($bp-small) {  
                 color: var(--color-black);
+                border-bottom: 1px solid var(--color-black);
             }
         }
     }
@@ -168,5 +171,46 @@
 }
 
 .sticky {
-    background-color: orangered;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-white);
+    height: 7rem;
+    z-index: 9997;
+    box-shadow: 0 1px 1px #efefef;
+    transition: all 0.4s linear;
+
+    @include respond($bp-small) {   
+        height: 4.8rem;
+    }
+
+    .navigation__logo {
+        color: var(--color-primary);
+        text-shadow: -0.8px 0px 0px rgba(51, 48, 46, 1);
+
+        @include respond($bp-small) {   
+            text-shadow: none;
+
+        }
+    }
+
+    .navigation__link {
+        &:link, 
+        &:visited {
+            color: var(--color-grey);
+        }
+
+        &:hover,
+        &:active {
+            color: var(--color-black);
+            border-bottom: 1px solid var(--color-black);
+        }
+    }
+
+    .navigation__ctrl--icon {
+        
+        &:hover {
+            fill: var(--color-primary);
+        }
+    }
 }

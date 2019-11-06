@@ -31,7 +31,19 @@ $(document).ready(function(){
 
     $('.navigation__icons--dehaze').click(function() {
         $('.navigation__list').slideToggle(400);
-    })
+    });
+
+    $('#navigation-trigger').waypoint(function(direction) {
+        if(direction == "down") {
+            $('.navigation').addClass('sticky');
+        } else {
+            $('.navigation').removeClass('sticky');
+        }
+    },
+    {
+        offset: '80px'
+    }
+    );
 });
 
 

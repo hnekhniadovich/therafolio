@@ -194,22 +194,24 @@ body {
   left: 0;
   right: 0;
   z-index: 10;
-  max-width: 150rem;
-  margin: auto;
+  margin: 0 auto;
   height: 1rem;
-  margin-top: 1rem; }
+  padding-top: 1rem; }
   @media only screen and (max-width: 43.75em) {
     .navigation {
       position: relative;
       background-color: var(--color-white);
       color: var(--color-primary);
-      margin-top: 0;
-      height: 4.8rem; } }
+      height: 4.8rem;
+      padding-top: 0; } }
   .navigation__nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 0 4rem; }
+    padding: 0 4rem;
+    max-width: 150rem;
+    margin-left: auto;
+    margin-right: auto; }
     @media only screen and (max-width: 43.75em) {
       .navigation__nav {
         flex-direction: column;
@@ -284,7 +286,8 @@ body {
     border-bottom: 1px solid var(--color-white); }
     @media only screen and (max-width: 43.75em) {
       .navigation__link:hover, .navigation__link:active {
-        color: var(--color-black); } }
+        color: var(--color-black);
+        border-bottom: 1px solid var(--color-black); } }
   @media only screen and (max-width: 62.5em) {
     .navigation__ctrl {
       display: none; } }
@@ -310,7 +313,30 @@ body {
       padding-top: 0.6rem; }
 
 .sticky {
-  background-color: orangered; }
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  height: 7rem;
+  z-index: 9997;
+  box-shadow: 0 1px 1px #efefef;
+  transition: all 0.4s linear; }
+  @media only screen and (max-width: 43.75em) {
+    .sticky {
+      height: 4.8rem; } }
+  .sticky .navigation__logo {
+    color: var(--color-primary);
+    text-shadow: -0.8px 0px 0px #33302e; }
+    @media only screen and (max-width: 43.75em) {
+      .sticky .navigation__logo {
+        text-shadow: none; } }
+  .sticky .navigation__link:link, .sticky .navigation__link:visited {
+    color: var(--color-grey); }
+  .sticky .navigation__link:hover, .sticky .navigation__link:active {
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-black); }
+  .sticky .navigation__ctrl--icon:hover {
+    fill: var(--color-primary); }
 
 #sidebar {
   width: 500px;
