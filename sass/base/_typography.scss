@@ -10,19 +10,25 @@ body {
     color: var(--color-white);
     font-size: 6.0rem;
     font-weight: 200;
-    line-height: 1;
-    text-shadow: -1px 0px 0px rgba(255, 255, 255, 1);
+    line-height: 1.1;
+    text-shadow: -0.5px 0px 0px rgba(255, 255, 255, 1);
+
+    @include respond($bp-medium) {   
+        font-size: 5rem;
+    }
+
+    @include respond($bp-small) {   
+        font-size: 3.4rem;
+    }
 
     &--left {
         display: block;
         animation: moveInLeft 1s ease-out;
-        line-height: 1.2;
     }
 
     &--right {
         display: block;
         animation: moveInRight 1s ease-out;
-        line-height: 1.2;
     }
 }
 
@@ -30,7 +36,11 @@ body {
     color: var(--color-white);
     font-size: 4.5rem;
     font-weight: 200;
-    line-height: 1.1;
+    line-height: 1.2;
+
+    @include respond($bp-small) {   
+        font-size: 3.4rem;
+    }
 }
 
 .h3 {

@@ -1,8 +1,18 @@
 .dark-bg {
     background-color: var(--color-primary);
     text-align: center;
-    padding: 15rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
 
+    @include respond($bp-medium) {   
+        height: 40vh;
+    }
+
+    @include respond($bp-small) {   
+        height: 30vh;
+    }
 
     &--content {
         margin-left: auto;
@@ -13,14 +23,12 @@
 
 
         @include respond($bp-medium) {   
-            max-width: 70vw;
+            max-width: 78vw;
         }
 
 
         @include respond($bp-small) {   
-            max-width: 80vw;
+            max-width: 90vw;
         }
-        
     }
-
 }

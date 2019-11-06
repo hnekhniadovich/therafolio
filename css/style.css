@@ -52,12 +52,6 @@
 
 html {
   font-size: 62.5%; }
-  @media only screen and (max-width: 50em) {
-    html {
-      font-size: 56.25%; } }
-  @media only screen and (max-width: 37.5em) {
-    html {
-      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
@@ -73,22 +67,29 @@ body {
   color: var(--color-white);
   font-size: 6.0rem;
   font-weight: 200;
-  line-height: 1;
-  text-shadow: -1px 0px 0px white; }
+  line-height: 1.1;
+  text-shadow: -0.5px 0px 0px white; }
+  @media only screen and (max-width: 62.5em) {
+    .h1 {
+      font-size: 5rem; } }
+  @media only screen and (max-width: 43.75em) {
+    .h1 {
+      font-size: 3.4rem; } }
   .h1--left {
     display: block;
-    animation: moveInLeft 1s ease-out;
-    line-height: 1.2; }
+    animation: moveInLeft 1s ease-out; }
   .h1--right {
     display: block;
-    animation: moveInRight 1s ease-out;
-    line-height: 1.2; }
+    animation: moveInRight 1s ease-out; }
 
 .h2 {
   color: var(--color-white);
   font-size: 4.5rem;
   font-weight: 200;
-  line-height: 1.1; }
+  line-height: 1.2; }
+  @media only screen and (max-width: 43.75em) {
+    .h2 {
+      font-size: 3.4rem; } }
 
 .h3 {
   color: var(--color-white);
@@ -197,18 +198,31 @@ body {
   margin: auto;
   height: 1rem;
   margin-top: 1rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .navigation {
       position: relative;
-      height: 5rem; } }
+      background-color: var(--color-white);
+      color: var(--color-primary);
+      margin-top: 0;
+      height: 4.8rem; } }
   .navigation__nav {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 0 4rem; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .navigation__nav {
-        align-items: flex-end; } }
+        flex-direction: column;
+        align-items: center;
+        height: 100%; } }
+  @media only screen and (max-width: 43.75em) {
+    .navigation__mobile {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 100%;
+      height: 100%;
+      padding-top: .2rem; } }
   .navigation__logo:link, .navigation__logo:visited {
     text-decoration: none;
     color: var(--color-white);
@@ -217,27 +231,40 @@ body {
     font-weight: 300;
     text-shadow: -0.8px 0px 0px white;
     letter-spacing: 0.8px; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .navigation__logo:link, .navigation__logo:visited {
-        color: var(--color-black);
-        font-weight: 400; } }
+        color: var(--color-primary);
+        font-weight: 300;
+        height: 100%; } }
   .navigation__list {
     display: flex;
     list-style: none;
     justify-content: center; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .navigation__list {
-        display: none; } }
+        position: absolute;
+        top: 4rem;
+        display: none;
+        background-color: var(--color-white);
+        padding: 2.2rem 0 1.1rem 0; } }
   .navigation__item {
     margin: 0 1.2rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .navigation__item {
         margin: 0 1rem; } }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__item {
+        width: 100vw;
+        text-align: center;
+        margin: .9rem 0; } }
   .navigation__item--tablet-view {
     display: none; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .navigation__item--tablet-view {
         display: unset; } }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__item--tablet-view {
+        display: block; } }
   .navigation__link:link, .navigation__link:visited {
     text-decoration: none;
     font-family: "Raleway", sans-serif;
@@ -250,9 +277,15 @@ body {
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.4s;
     padding-bottom: 0.1rem; }
+    @media only screen and (max-width: 43.75em) {
+      .navigation__link:link, .navigation__link:visited {
+        color: var(--color-grey); } }
   .navigation__link:hover, .navigation__link:active {
     border-bottom: 1px solid var(--color-white); }
-  @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 43.75em) {
+      .navigation__link:hover, .navigation__link:active {
+        color: var(--color-black); } }
+  @media only screen and (max-width: 62.5em) {
     .navigation__ctrl {
       display: none; } }
   .navigation__ctrl--icon {
@@ -265,15 +298,19 @@ body {
       fill: var(--color-tertiary); }
   .navigation__icons {
     display: none; }
-    @media only screen and (max-width: 37.5em) {
+    @media only screen and (max-width: 43.75em) {
       .navigation__icons {
         display: unset; } }
     .navigation__icons--mail, .navigation__icons--phone, .navigation__icons--dehaze {
       height: 2.5rem;
       width: 2.5rem;
-      margin-right: 1.5rem;
+      margin-right: .7rem;
       stroke: var(--color-white);
-      stroke-width: .7; }
+      stroke-width: .7;
+      padding-top: 0.6rem; }
+
+.sticky {
+  background-color: orangered; }
 
 #sidebar {
   width: 500px;
@@ -292,7 +329,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 7vh 7rem 4vh 7rem; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     #sidebar {
       display: none; } }
   #sidebar.active {
@@ -329,7 +366,7 @@ body {
   background: rgba(0, 0, 0, 0.7);
   z-index: 9998;
   display: none; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .sidebar-overlay {
       display: none; } }
 
@@ -376,25 +413,34 @@ body {
 .dark-bg {
   background-color: var(--color-primary);
   text-align: center;
-  padding: 15rem auto; }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; }
+  @media only screen and (max-width: 62.5em) {
+    .dark-bg {
+      height: 40vh; } }
+  @media only screen and (max-width: 43.75em) {
+    .dark-bg {
+      height: 30vh; } }
   .dark-bg--content {
     margin-left: auto;
     margin-right: auto;
     padding: 10rem 0;
     max-width: 50vw; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .dark-bg--content {
-        max-width: 70vw; } }
-    @media only screen and (max-width: 37.5em) {
+        max-width: 78vw; } }
+    @media only screen and (max-width: 43.75em) {
       .dark-bg--content {
-        max-width: 80vw; } }
+        max-width: 90vw; } }
 
 .about {
   padding: 12rem 10rem 18rem 10rem; }
-  @media only screen and (max-width: 50em) {
+  @media only screen and (max-width: 62.5em) {
     .about {
       padding: 10rem 4rem 14rem 4rem; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 43.75em) {
     .about {
       padding: 10rem 2rem; } }
   .about__content {
@@ -404,28 +450,28 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 100rem; }
-    @media only screen and (max-width: 50em) {
+    @media only screen and (max-width: 62.5em) {
       .about__content {
-        max-width: 70rem; } }
-    @media only screen and (max-width: 37.5em) {
+        max-width: 75rem; } }
+    @media only screen and (max-width: 43.75em) {
       .about__content {
         flex-direction: column; } }
     .about__content--img {
       width: 50vw;
       height: auto; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 62.5em) {
         .about__content--img {
           width: 37vw; } }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 43.75em) {
         .about__content--img {
           margin-bottom: 8rem;
-          width: 80vw; } }
+          width: 70vw; } }
     .about__content--text {
       margin-left: 8vw; }
-      @media only screen and (max-width: 50em) {
+      @media only screen and (max-width: 62.5em) {
         .about__content--text {
           margin-left: 7vw; } }
-      @media only screen and (max-width: 37.5em) {
+      @media only screen and (max-width: 43.75em) {
         .about__content--text {
           margin: 0 5rem; } }
       .about__content--text .h4 {

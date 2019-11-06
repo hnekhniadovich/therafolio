@@ -28,6 +28,10 @@ $(document).ready(function(){
         $("#sidebar").addClass("active");
         $(".sidebar-overlay").fadeIn()
     });
+
+    $('.navigation__icons--dehaze').click(function() {
+        $('.navigation__list').slideToggle(400);
+    })
 });
 
 

@@ -19,7 +19,7 @@
         max-width: 100rem;
 
         @include respond($bp-medium) {   
-            max-width: 70rem;
+            max-width: 75rem;
         }
 
         @include respond($bp-small) {   
@@ -37,7 +37,7 @@
     
             @include respond($bp-small) {   
                 margin-bottom: 8rem;
-                width: 80vw;
+                width: 70vw;
             }
         }
 
