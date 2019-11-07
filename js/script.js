@@ -39,11 +39,9 @@ $(document).ready(function(){
         } else {
             $('.navigation').removeClass('sticky');
         }
-    },
-    {
-        offset: '80px'
-    }
-    );
+    },{
+        offset: '75px'
+    });
 });
 
 

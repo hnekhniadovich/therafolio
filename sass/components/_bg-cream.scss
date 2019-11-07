@@ -1,0 +1,45 @@
+.cream-bg {
+    background-color: orangered;
+    padding: 15rem 10rem;
+
+    @include respond($bp-medium) {   
+        padding: 10rem 5rem;
+    }
+
+    &__inner {
+        max-width: 110rem;
+        margin: 3rem auto;
+
+        place-items: center;
+
+        &--content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+            grid-gap: 7rem;
+        }
+    }
+}
+
+.massage {
+
+    &:last-child {
+        grid-column: 2 / -2;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__overlay {
+
+        &--text-box {
+
+        }
+    }
+
+    &__title {
+
+    }
+
+
+}

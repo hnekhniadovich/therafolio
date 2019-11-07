@@ -320,7 +320,7 @@ body {
   height: 7rem;
   z-index: 9997;
   box-shadow: 0 1px 1px #efefef;
-  transition: all 0.4s linear; }
+  transition: all 0.4s ease-out; }
   @media only screen and (max-width: 43.75em) {
     .sticky {
       height: 4.8rem; } }
@@ -460,6 +460,27 @@ body {
     @media only screen and (max-width: 43.75em) {
       .dark-bg--content {
         max-width: 90vw; } }
+
+.cream-bg {
+  background-color: orangered;
+  padding: 15rem 10rem; }
+  @media only screen and (max-width: 62.5em) {
+    .cream-bg {
+      padding: 10rem 5rem; } }
+  .cream-bg__inner {
+    max-width: 110rem;
+    margin: 3rem auto;
+    place-items: center; }
+    .cream-bg__inner--content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+      grid-gap: 7rem; }
+
+.massage:last-child {
+  grid-column: 2 / -2; }
+
+.massage__img {
+  width: 100%; }
 
 .about {
   padding: 12rem 10rem 18rem 10rem; }
