@@ -1,0 +1,93 @@
+.light-bg {
+    background-color: var(--color-tertiary);
+    padding: 9rem 5rem 5rem 5rem;
+    text-align: center;
+
+    &__container {
+        max-width: 68rem;
+		margin: 0 auto;
+		text-align: center;
+        margin: 6rem auto;
+
+        @include respond($bp-medium) {   
+            max-width: 55rem;
+        }
+
+        &--title {
+            color: var(--color-black);
+            margin-bottom: 7rem;
+        }
+
+        .review {
+            position: relative;
+			width: 100%;
+            padding: 8rem 0 2rem 0;
+            
+            &::before {
+                content: "\201C";
+                position: absolute;
+                left: 50%;
+                margin-left: -4rem;
+                font-size: 16rem;
+                top: -7.8rem;
+                color: var(--color-grey);
+
+                @include respond($bp-small) {  
+                    top: -6rem;
+                }
+            }
+    
+            .h4 {
+                color: var(--color-black);
+                line-height: 1.4;
+            }
+
+            .photo {
+                height: 4.5rem;
+                width: 4.5rem;
+                border-radius: 50%;
+                margin: 2rem auto;
+                display: block;
+            }
+
+            .h6 {
+                color: var(--color-primary);
+                font-size: 1.3rem;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    margin: 0;
+    padding: 1rem 0;
+    
+    list-style-type: none;
+    
+        li {
+            margin: 0 0.25rem;
+        }
+    
+        button {
+            display: block;
+            width: 1rem;
+            height: 1rem;
+            padding: 0;
+            outline: none;
+            border: none;
+            border-radius: 100%;
+            background-color: var(--color-secondary);
+            
+            text-indent: -9999px;
+        }
+    
+        li.slick-active button {
+            background-color: var(--color-grey);
+        }
+    
+}

@@ -17,6 +17,8 @@ $(document).ready(function(){
                     <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use> \
                     </svg>';
 
+   
+
     $('.slick-prev').append(leftNavHtml);
     $('.slick-next').append(rightNavHtml);
 
@@ -42,6 +44,17 @@ $(document).ready(function(){
     },{
         offset: '75px'
     });
+
+
+    $('.light-bg__container--reviews').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        cssEase: 'ease-in-out'
+    });
+
 });
 
 
