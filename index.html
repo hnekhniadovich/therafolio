@@ -15,35 +15,39 @@
         <title>MD | Massage Therapist</title>
     </head>
     <body>
-        <header class="header">
+        <header class="header" id="home">
             <nav class="topbar navigation">
                 <div class="navigation__nav">
                     <div class="navigation__mobile">
-                        <a class="navigation__logo" href="#">MD Massage</a>
+                        <a class="navigation__logo" href="#home">MD Massage</a>
                         <div class="navigation__icons">
-                            <svg class="navigation__icons--mail">
-                                <use xlink:href="img/sprite.svg#icon-mail"></use>
-                            </svg>
-                            <svg class="navigation__icons--phone">
-                                <use xlink:href="img/sprite.svg#icon-phone"></use>
-                            </svg>
+                            <a href="mailTo:dzmarusek@gmail.com">
+                                <svg class="navigation__icons--mail">
+                                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                </svg>
+                            </a>
+                            <a href="tel:401-450-8770">
+                                <svg class="navigation__icons--phone">
+                                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                                </svg>
+                            </a>
                             <svg class="navigation__icons--dehaze">
                                 <use xlink:href="img/sprite.svg#icon-dehaze"></use>
                             </svg>
                         </div>
                     </div>
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Services</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link">Reviews</a></li> 
-                        <li class="navigation__item navigation__item--tablet-view"><a href="#" class="navigation__link">Contact</a></li>
+                        <li class="navigation__item"><a href="#home" class="navigation__link">Home</a></li>
+                        <li class="navigation__item"><a href="#about" class="navigation__link">About</a></li>
+                        <li class="navigation__item"><a href="#services" class="navigation__link">Services</a></li>
+                        <li class="navigation__item"><a href="#reviews" class="navigation__link">Reviews</a></li> 
+                        <li class="navigation__item navigation__item--tablet-view"><a href="#contact" class="navigation__link">Contact</a></li>
                     </ul>
                     <div class="navigation__ctrl">
                         <svg class="navigation__ctrl--icon" id="sidebarCollapse">
                             <use xlink:href="img/sprite.svg#icon-more-vertical"></use>
                         </svg>
-                        <a href="#" class="btn btn--black">Contact</a>
+                        <a href="#contact" class="btn btn--black">Contact</a>
                     </div>
                     
                 </div>
@@ -60,27 +64,35 @@
                     <p class="h4">Ask me any questions you have through the following channels.</p>
                     <div class="u-margin-bottom-small">&nbsp</div>
                     <h6 class="h6">Email</h6>
-                    <a href="" class="h4">dzmarusek@gmail.com</a>
+                    <a href="mailTo:dzmarusek@gmail.com" class="h4">dzmarusek@gmail.com</a>
                     <h6 class="h6">Phone &amp; Whatsapp</h6>
-                    <a href="" class="h4">(401) 450-8770</a>
+                    <a href="tel:401-450-8770" class="h4">(401) 450-8770</a>
                     <h6 class="h6">Schedule</h6>
                     <h5 class="h5">Monday to Friday</h5>
                     <h5 class="h5">Afternoon 4pm to 8:30pm</h5>
 
                 </div>
                 <ul class="social-links">
-                    <svg class="social-links__icons--facebook">
-                        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                    </svg>
-                    <svg class="social-links__icons--instagram">
-                        <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                    </svg>
-                    <svg class="social-links__icons--google-plus1">
-                        <use xlink:href="img/sprite.svg#icon-google-plus1"></use>
-                    </svg>
-                    <svg class="social-links__icons--mail">
-                        <use xlink:href="img/sprite.svg#icon-mail"></use>
-                    </svg>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <svg class="social-links__icons--facebook">
+                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <svg class="social-links__icons--instagram">
+                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://plus.google.com" target="_blank">
+                        <svg class="social-links__icons--google-plus1">
+                            <use xlink:href="img/sprite.svg#icon-google-plus1"></use>
+                        </svg>
+                    </a>
+                    <a href="mailTo:dzmarusek@gmail.com" target="_blank">
+                        <svg class="social-links__icons--mail">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </a>
                 </ul>
             </nav>
 
@@ -92,7 +104,7 @@
                     <span class="h1--left">Unique eiusmod.</span>
                     <span class="h1--right">Incigidrunt et labore.</span>
                 </h1>
-                <a href="#" class="btn btn--white btn--animated">Unbutton Me Now</a>
+                <a href="#contact" class="btn btn--white btn--animated">Unbutton Me Now</a>
             </div>
       
             <div class="header__slider">
@@ -113,7 +125,7 @@
                 </div>
             </section>
 
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__content">
                     <img class="about__content--img"src="/img/foto.jpg" alt="About Foto">
                     <div class="about__content--text">
@@ -128,7 +140,7 @@
                 </div>
             </section>
 
-            <section class="cream-bg" id="massages">
+            <section class="cream-bg" id="services">
                 <h6 class="h6">Explore</h4>
                 <h3 class="h3">Services and Products</h3>
                 <div class="cream-bg__inner">
@@ -182,11 +194,11 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" class="btn btn--black">Book Now</a>
+                <a href="#contact" class="btn btn--black">Book Now</a>
                 
             </section>
 
-            <section class="light-bg">
+            <section class="light-bg" id="reviews">
                 <h6 class="light-bg__container--title h6">The Stories</h6>
                 <div class="light-bg__container">
                     <div class="light-bg__container--reviews">
@@ -226,6 +238,19 @@
                 </div>
             </section>
 
+            <section class="white-bg" id="contact">
+                <div class="white-bg--content">
+                    <h3 class="h3 u-margin-bottom-medium">Are you ready for new experinces?</h3>
+                    <p class="u-margin-bottom-big">If you are interested in relaxing your body and freeing yourself from tension, contact me now.</p>
+                    <h4 class="h4">Call me now<br>(401) 450-8770</h4>
+                    <a href="mailTo:dzmarusek@gmail.com" class="btn btn--white">Send an Email
+                        <svg class="white-bg__icons--mail">
+                            <use xlink:href="img/sprite.svg#icon-mail"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
             <section class="gallery">
                 <figure class="gallery__item gallery__item--1"><img src="img/gal-1.jpg" alt="Gallery image 1" class="gallery__img"></figure>
                 <figure class="gallery__item gallery__item--2"><img src="img/gal-2.jpg" alt="Gallery image 2" class="gallery__img"></figure>
@@ -243,45 +268,53 @@
 
             <footer class="footer">
                 <div class="footer__container--outer">
-                    <a class="footer__logo" href="#">MD Massage</a>
+                    <a class="footer__logo" href="#home">MD Massage</a>
                     <div class="footer__container">
                         <div class="footer__menu">
                             <div class="h6">Menu</div>
                             <ul class="footer__menu--list">
-                                <li class="footer__menu--item"><a href="" class="footer__menu--link">Home</a></li>
-                                <li class="footer__menu--item"><a href="" class="footer__menu--link">About</a></li>
-                                <li class="footer__menu--item"><a href="" class="footer__menu--link">Services</a></li>
-                                <li class="footer__menu--item"><a href="" class="footer__menu--link">Reviews</a></li>
+                                <li class="footer__menu--item"><a href="#home" class="footer__menu--link">Home</a></li>
+                                <li class="footer__menu--item"><a href="#about" class="footer__menu--link">About</a></li>
+                                <li class="footer__menu--item"><a href="#services" class="footer__menu--link">Services</a></li>
+                                <li class="footer__menu--item"><a href="#reviews" class="footer__menu--link">Reviews</a></li>
                             </ul>
                         </div>
                         <div class="footer__services">
                             <div class="h6">Services</div>
                             <ul class="footer__services--list">
-                                <li class="footer__services--item"><a href="" class="footer__services--link">Swedish Massage</a></li>
-                                <li class="footer__services--item"><a href="" class="footer__services--link">Deep Tissue Massage</a></li>
-                                <li class="footer__services--item"><a href="" class="footer__services--link">Thai Massage</a></li>
-                                <li class="footer__services--item"><a href="" class="footer__services--link">Prenatal Massage</a></li>
+                                <li class="footer__services--item"><a href="#services" class="footer__services--link">Swedish Massage</a></li>
+                                <li class="footer__services--item"><a href="#services" class="footer__services--link">Deep Tissue Massage</a></li>
+                                <li class="footer__services--item"><a href="#services" class="footer__services--link">Thai Massage</a></li>
+                                <li class="footer__services--item"><a href="#services" class="footer__services--link">Prenatal Massage</a></li>
                             </ul>
                         </div>
                         <div class="footer__contact">
                             <div class="h6">Contact Me</div>
                             <ul class="footer__contact--list">
-                                <li class="footer__contact--item"><a href="" class="footer__contact--link">dzmarusek@gmail.com</a></li>
-                                <li class="footer__contact--item"><a href="" class="footer__contact--link">(401) 450-8770</a></li>
+                                <li class="footer__contact--item"><a href="mailTo:dzmarusek@gmail.com" class="footer__contact--link">dzmarusek@gmail.com</a></li>
+                                <li class="footer__contact--item"><a href="tel:401-450-8770" class="footer__contact--link">(401) 450-8770</a></li>
                                 <li class="footer__contact--item">
                                     <ul class="social-links">
-                                        <svg class="social-links__icons--facebook">
-                                            <use xlink:href="img/sprite.svg#icon-facebook"></use>
-                                        </svg>
-                                        <svg class="social-links__icons--instagram">
-                                            <use xlink:href="img/sprite.svg#icon-instagram"></use>
-                                        </svg>
-                                        <svg class="social-links__icons--google-plus1">
-                                            <use xlink:href="img/sprite.svg#icon-google-plus1"></use>
-                                        </svg>
-                                        <svg class="social-links__icons--mail">
-                                            <use xlink:href="img/sprite.svg#icon-mail"></use>
-                                        </svg>
+                                        <a href="https://www.facebook.com/" target="_blank">
+                                            <svg class="social-links__icons--facebook">
+                                                <use xlink:href="img/sprite.svg#icon-facebook"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="https://www.instagram.com/" target="_blank">
+                                            <svg class="social-links__icons--instagram">
+                                                <use xlink:href="img/sprite.svg#icon-instagram"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="https://plus.google.com" target="_blank">
+                                            <svg class="social-links__icons--google-plus1">
+                                                <use xlink:href="img/sprite.svg#icon-google-plus1"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="mailTo:dzmarusek@gmail.com" target="_blank">
+                                            <svg class="social-links__icons--mail">
+                                                <use xlink:href="img/sprite.svg#icon-mail"></use>
+                                            </svg>
+                                        </a>
                                     </ul>
                                 </li>
                             </ul>
@@ -300,7 +333,7 @@
                         <img src="img/swedish-2.jpg" alt="Swedish Massage" class="popup__img">
                     </div>
                     <div class="popup__right">
-                        <a href="#massages" class="popup__close">&times;</a>
+                        <a href="#services" class="popup__close">&times;</a>
                         <h3 class="h3 u-margin-bottom-medium">Swedish Massage</h3>
                         <p class="popup__text u-margin-bottom-medium">Swedish massage is the most leading type of massage in the West. It is accomplished by manual manipulation of soft
                                             tissue and muscles in the body to help restore balance and health. If it’s your first time or you don’t get massage
@@ -310,7 +343,7 @@
                             <span>60 min: $</span>
                             <span>90 min: $</span>
                         </div>
-                        <a href="#" class="btn btn--black">Book Now</a>
+                        <a href="#contact" class="btn btn--black">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -322,7 +355,7 @@
                         <img src="img/deep-tissue-2.jpg" alt="Swedish Massage" class="popup__img">
                     </div>
                     <div class="popup__right">
-                        <a href="#massages" class="popup__close">&times;</a>
+                        <a href="#services" class="popup__close">&times;</a>
                         <h3 class="h3 u-margin-bottom-medium">Deep Tissue Massage</h3>
                         <p class="popup__text u-margin-bottom-medium">Deep tissue massage is based on Swedish massage but 
                             focusing on the deeper layers of muscle tissue, tendons and
@@ -332,7 +365,7 @@
                             <span>60 min: $</span>
                             <span>90 min: $</span>
                         </div>
-                        <a href="#" class="btn btn--black">Book Now</a>
+                        <a href="#contact" class="btn btn--black">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -344,7 +377,7 @@
                         <img src="img/thai-2.jpg" alt="Swedish Massage" class="popup__img">
                     </div>
                     <div class="popup__right">
-                        <a href="#massages" class="popup__close">&times;</a>
+                        <a href="#services" class="popup__close">&times;</a>
                         <h3 class="h3 u-margin-bottom-medium">Thai Massage</h3>
                         <p class="popup__text u-margin-bottom-medium">Thai massage is an ancient form of massage, which incorporates a 
                             traditional combination of acupressure, energy meridian
@@ -355,7 +388,7 @@
                             <span>60 min: $</span>
                             <span>90 min: $</span>
                         </div>
-                        <a href="#" class="btn btn--black">Book Now</a>
+                        <a href="#contact" class="btn btn--black">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -367,7 +400,7 @@
                         <img src="img/prenatal-2.jpg" alt="Swedish Massage" class="popup__img">
                     </div>
                     <div class="popup__right">
-                        <a href="#massages" class="popup__close">&times;</a>
+                        <a href="#services" class="popup__close">&times;</a>
                         <h3 class="h3 u-margin-bottom-medium">Prenatal Massage</h3>
                         <p class="popup__text u-margin-bottom-medium">Prenatal massage is offered for women during pregnancy, labor, 
                             and postpartum recovery. It’s one of the safest and most
@@ -378,7 +411,7 @@
                             <span>60 min: $</span>
                             <span>90 min: $</span>
                         </div>
-                        <a href="#" class="btn btn--black">Book Now</a>
+                        <a href="#contact" class="btn btn--black">Book Now</a>
                     </div>
                 </div>
             </div>
