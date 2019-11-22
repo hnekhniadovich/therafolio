@@ -282,8 +282,8 @@ body {
       position: relative;
       background-color: var(--color-white);
       color: var(--color-primary);
-      height: 4.8rem;
-      padding-top: 0.3rem; } }
+      height: 6.5rem;
+      padding-top: 1rem; } }
   .navigation__nav {
     display: flex;
     justify-content: space-between;
@@ -317,7 +317,8 @@ body {
       .navigation__logo:link, .navigation__logo:visited {
         color: var(--color-primary);
         font-weight: 300;
-        height: 100%; } }
+        height: 100%;
+        font-size: 3rem; } }
   .navigation__list {
     display: flex;
     list-style: none;
@@ -325,10 +326,10 @@ body {
     @media only screen and (max-width: 43.75em) {
       .navigation__list {
         position: absolute;
-        top: 4rem;
+        top: 6rem;
         display: none;
         background-color: var(--color-white);
-        padding: 2.2rem 0 1.1rem 0; } }
+        padding: 1rem 0 1.1rem 0; } }
   .navigation__item {
     margin: 0 1.2rem; }
     @media only screen and (max-width: 62.5em) {
@@ -385,9 +386,9 @@ body {
       .navigation__icons {
         display: unset; } }
     .navigation__icons--mail, .navigation__icons--phone, .navigation__icons--dehaze {
-      height: 2.5rem;
-      width: 2.5rem;
-      margin-right: 0.7rem;
+      height: 3rem;
+      width: 3rem;
+      margin-right: 1rem;
       stroke: var(--color-white);
       stroke-width: 0.7;
       padding-top: 0.6rem; }
@@ -405,7 +406,7 @@ body {
   transition: all 0.4s ease-out; }
   @media only screen and (max-width: 43.75em) {
     .sticky {
-      height: 4.8rem; } }
+      height: 6.5rem; } }
   .sticky .navigation__nav {
     align-items: center; }
   .sticky .navigation__logo {
