@@ -1,97 +1,98 @@
 .cream-bg {
-    background-color: var(--color-secondary);
-    padding: 12rem 10rem 12rem 10rem;
-    text-align: center;
+  background-color: var(--color-secondary);
+  padding: 12rem 10rem 12rem 10rem;
+  text-align: center;
 
-    .h6 {
-        color: var(--color-black);
-        margin-bottom: 1.5rem;
-    }
+  .h6 {
+    color: var(--color-black);
+    margin-bottom: 1.5rem;
+  }
 
-    .h3 {
-        color: var(--color-black);
-        margin-bottom: 10rem;
-    }
+  .h3 {
+    color: var(--color-black);
+    margin-bottom: 10rem;
+  }
 
-    .btn--black {
-        margin-top: 3rem;
-    }
+  .btn--black {
+    margin-top: 3rem;
+  }
 
-    @include respond($bp-medium) {   
-        padding: 10rem 5rem;
-    }
+  @include respond($bp-medium) {
+    padding: 10rem 5rem;
+  }
 
-    &__inner {
-        max-width: 110rem;
-        margin: 3rem auto;
+  &__inner {
+    max-width: 110rem;
+    margin: 3rem auto;
 
-        &--content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
-            grid-gap: 7rem;
-            text-align: center;
+    &--content {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(27rem, 1fr));
+      grid-gap: 7rem;
+      text-align: center;
 
-            .massage__outer {
-                &:last-child {
-                    grid-column: 2 / -2;
-                }
-
-                .massage {
-                    position: relative;
-                    display: block;
-                    overflow: hidden;
-                
-                    &__img {
-                        width: 100%;
-                        transition: all 0.2s linear, 1s;
-                    }
-                
-                    &__overlay {
-                        width: 100%;
-                        height: 100%;
-                        background-color: rgba(0, 0, 0, 0.3);
-                        position: absolute;
-                        left: 0px;
-                        top: 0px;
-                        opacity: 0;  
-    
-                        transition: all 0.2s linear, 1s;
-    
-                        &--text-box {
-                            position: absolute;
-                            top: 62%;
-                            left: 50%;
-                            transform: translate(-50%, -50%);
-                            margin-top: 7%;
-                            transition: all 0.2s linear, 1s;
-
-                            .h6 {
-                                color: var(--color-white);
-                            }
-                        }
-                    }
-    
-                    &:hover .massage__overlay {
-                        opacity: 1;
-                    }
-    
-                    &:hover .massage__img {
-                        transform: scale(1.04, 1.04);
-                    }
-    
-                    &:hover .massage__overlay .massage__overlay--text-box {
-                        margin-top: -7%;
-                    }
-    
-                }
-            }
-
-            .h4 {
-                margin-top: 2rem;
-                color: var(--color-grey);
-                font-weight: 300;
-            }
-
+      .massage__outer {
+        &:last-child {
+          grid-column: 2 / -2;
         }
+
+        .massage {
+          position: relative;
+          overflow: hidden;
+          background-color: orangered;
+
+          &__img {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            transition: all 0.2s linear, 1s;
+          }
+
+          &__overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            opacity: 0;
+
+            transition: all 0.2s linear, 1s;
+
+            &--text-box {
+              position: absolute;
+              top: 62%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              margin-top: 7%;
+              transition: all 0.2s linear, 1s;
+
+              .h6 {
+                color: var(--color-white);
+                text-decoration: none;
+              }
+            }
+          }
+
+          &:hover .massage__overlay {
+            opacity: 1;
+          }
+
+          &:hover .massage__img {
+            transform: scale(1.04, 1.04);
+          }
+
+          &:hover .massage__overlay .massage__overlay--text-box {
+            margin-top: -7%;
+          }
+        }
+      }
+
+      .h4 {
+        margin-top: 2rem;
+        color: var(--color-grey);
+        font-weight: 300;
+      }
     }
+  }
 }

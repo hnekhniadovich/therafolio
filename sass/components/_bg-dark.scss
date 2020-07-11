@@ -1,34 +1,25 @@
 .dark-bg {
-    background-color: var(--color-primary);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+  background-color: var(--color-primary);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    @include respond($bp-medium) {   
-        height: 40vh;
+  &--content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10rem 0;
+
+    max-width: 50vw;
+
+    @include respond($bp-medium) {
+      max-width: 78vw;
+      padding: 7rem 0;
     }
 
-    @include respond($bp-small) {   
-        height: 30vh;
+    @include respond($bp-small) {
+      max-width: 90vw;
+      padding: 5rem 0;
     }
-
-    &--content {
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10rem 0;
-        
-        max-width: 50vw;
-
-
-        @include respond($bp-medium) {   
-            max-width: 78vw;
-        }
-
-
-        @include respond($bp-small) {   
-            max-width: 90vw;
-        }
-    }
+  }
 }
