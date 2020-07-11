@@ -758,6 +758,9 @@ body {
       margin-left: 0.4rem;
       stroke: var(--color-white);
       stroke-width: 0.7; }
+    .white-bg .btn:hover svg {
+      fill: var(--color-white);
+      stroke: var(--color-black); }
 
 .about {
   padding: 12rem 10rem 18rem 10rem; }
